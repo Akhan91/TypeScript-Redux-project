@@ -30,7 +30,7 @@ export const searchRepos = (term: string) => {
     } catch (err: any) {
       dispatch({
         type: ActionType.SEARCH_REPOS_ERROR,
-        payload: err,
+        payload: err.message,
       });
     }
   };

@@ -1,13 +1,13 @@
-import { render } from '@testing-library/react';
 import { Provider } from 'react-redux';
 import { store } from '../state';
 import ReposList from './ReposList';
+import './App.css';
 
 const App = () => {
   return (
     <Provider store={store}>
-      <div>
-        <h1>Search for Repositories</h1>
+      <div className="appContainer">
+        <h1 className="mainTitle">Search for libraries</h1>
         <ReposList />
       </div>
     </Provider>
